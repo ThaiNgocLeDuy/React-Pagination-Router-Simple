@@ -1,0 +1,48 @@
+.search {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.search .input-search {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 10;
+
+    width: 300px;
+    height: 50%;
+    padding: 10px;
+    outline: none;
+
+    font-weight: bold;
+    transition: all .5s ease-in-out 0s;
+}
+
+.search .input-search:focus {
+    box-shadow: 0 0 5px 0px #1e1e1e;
+}
+
+.search .input-search:not(:placeholder-shown) + .go {
+    display: block;
+    right: 0;
+}
+
+.search .go {
+    width: 50px;
+    height: 50%;
+
+    position: absolute;
+    top: 50%;
+    right: -55px;
+    z-index: 10;
+    
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    
+    background: #1e1e1e;
+    box-shadow: -5px 1px 0 0 #b7b7b794;
+    transition: all .5s cubic-bezier(0, 0, 0.43, 1.49);
+}
